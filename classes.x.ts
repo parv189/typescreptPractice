@@ -64,7 +64,7 @@ console.log(array);
 
 
 
-
+export{}
 
 
 
