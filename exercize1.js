@@ -37,10 +37,7 @@ console.log(emp1);
 console.log(emp2);
 console.log(emp3);
 console.log(employee.filter(function (value) { return value.Gender === gender.M && value.City === "Ahmedabad"; }));
-console.log(employee.find(function (_a) {
-    var Name = _a.Name;
-    return Name === "vishal";
-}));
+console.log(employee.filter(function (Name) { return Name.Name === "vishal"; }));
 // var searchByName = employee.map((fletter)=>{
 //     for (let p of employee) {
 //         for (let q = 0; q < p.Name.length; q++) {
