@@ -33,10 +33,10 @@ var emp1 = [...employee].sort((a,b)=>{return(a.Name>b.Name?1:(a.Name<b.Name?-1:0
 var emp2 = [...employee].sort((a,b)=>{return(a.Salary - b.Salary)})
 var emp3 = [...employee].sort((a,b)=>{return(a.Gender>b.Gender?1:-1)})
 
-console.log(emp1)
-console.log(emp2)
-console.log(emp3);
-console.log(employee.filter((value)=>{return value.Gender === gender.M && value.City === "Ahmedabad"}));
+//console.log(emp1)
+//console.log(emp2)
+//console.log(emp3);
+//console.log(employee.filter((value)=>{return value.Gender === gender.M && value.City === "Ahmedabad"}));
 
 console.log(employee.filter((Name) => {return Name.Name === "vishal"}))
 
@@ -50,11 +50,11 @@ console.log(employee.filter((Name) => {return Name.Name === "vishal"}))
 //     }
 
 // })
-function searchByName(fletter:string,Gender:gender,salary:number){
+function searchByName(letter:string,Gender:gender,salary:number){
 for(let p of employee){
     for(let q=0 ; q<p.Name.length ; q++){
-        if((p.Name[q] === fletter) && (p.Gender === Gender) && (p.Salary >= salary)){
-            console.log(p);
+        if((p.Name[q] === letter) && (p.Gender === Gender) && (p.Salary >= salary)){
+            //console.log(p);
         }
     }
 }

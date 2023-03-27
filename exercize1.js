@@ -33,10 +33,10 @@ var employee = [
 var emp1 = __spreadArray([], employee, true).sort(function (a, b) { return (a.Name > b.Name ? 1 : (a.Name < b.Name ? -1 : 0)); });
 var emp2 = __spreadArray([], employee, true).sort(function (a, b) { return (a.Salary - b.Salary); });
 var emp3 = __spreadArray([], employee, true).sort(function (a, b) { return (a.Gender > b.Gender ? 1 : -1); });
-console.log(emp1);
-console.log(emp2);
-console.log(emp3);
-console.log(employee.filter(function (value) { return value.Gender === gender.M && value.City === "Ahmedabad"; }));
+//console.log(emp1)
+//console.log(emp2)
+//console.log(emp3);
+//console.log(employee.filter((value)=>{return value.Gender === gender.M && value.City === "Ahmedabad"}));
 console.log(employee.filter(function (Name) { return Name.Name === "vishal"; }));
 // var searchByName = employee.map((fletter)=>{
 //     for (let p of employee) {
@@ -52,7 +52,7 @@ function searchByName(fletter, Gender, salary) {
         var p = employee_1[_i];
         for (var q = 0; q < p.Name.length; q++) {
             if ((p.Name[q] === fletter) && (p.Gender === Gender) && (p.Salary >= salary)) {
-                console.log(p);
+                //console.log(p);
             }
         }
     }
