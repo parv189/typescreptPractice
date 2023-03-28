@@ -10,20 +10,20 @@ return some.toUpperCase();
 }
 console.log(getupper("hello typescript"));
 
-export{}
 
 function getinfo(name:string,age:number,isadult:boolean){
     return "name is : "+name+", age is : "+age+" and is he adult : "+isadult;
 }
 console.log(getinfo("parv",21,true));
 
+
 function getinfo2(name:string,age:number, isadult:boolean=true){
     return "name is : "+name+", age is : "+age+" and is he adult : "+isadult;
 }
 console.log(getinfo2("parv",21,false));
 
-let heros =["thor","spiderman","ironman"]
 
+let heros =["thor","spiderman","ironman"]
 heros.map((hero:string) => {
 console.log(`hero is ${hero}`) ;
 })
@@ -39,10 +39,7 @@ function getdata2(name:string):string{
 console.log(getdata2("   parv"));
 
 
-
-
 //errors handle
-
 function error(ermassage:string):void{
     console.log(ermassage);
 }error("error 502");

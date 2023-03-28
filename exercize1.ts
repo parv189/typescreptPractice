@@ -20,7 +20,7 @@ enum grade {
     F = "<51",
 }
 
-var employee = [
+var employee :emp[] = [
     { Name: "vishal", Gender: gender.M, City: "Ahmedabad", Salary: 60000, Grade: grade.A },
     { Name: "laxit", Gender: gender.M, City: "Surat", Salary: 40000, Grade: grade.B },
     { Name: "sanjana", Gender: gender.F, City: "Mumbai", Salary: 30000, Grade: grade.B },
@@ -38,7 +38,7 @@ console.log(emp2)
 console.log(emp3);
 console.log(employee.filter((value)=>{return value.Gender === gender.M && value.City === "Ahmedabad"}));
 
-console.log(employee.filter((Name) => {return Name.Name === "vishal"}))
+console.log(employee.find(({Name}) =>  Name === "vishal"))
 
 // var searchByName = employee.map((fletter)=>{
 //     for (let p of employee) {
